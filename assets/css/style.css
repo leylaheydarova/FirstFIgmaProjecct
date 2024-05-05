@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    height: 300px;
+
+    margin-top: 80px;
+    padding-left: 60px;
+    position: relative;
+    border-radius: 32px 128px;
+    background: linear-gradient(45deg, blue, yellow);
+}
+
+.card h1{
+    font-size: 64px;
+    font-weight: 700;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+.notebook img{
+    height: 450px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-10%);
+}
+
+.figma img{
+    height: 120px;
+    position: absolute;
+    right: 278px;
+    top: 0;
+}
+
+.lupa img{
+    height: 120px;
+    position: absolute;
+    right: 150px;
+    bottom: 0;
+}
+
+.card2{
+    background: radial-gradient(circle at center, red 0, blue 0, green 100%);
+    box-shadow: 10px 5px 5px red;
+}
+
+th{
+    font-weight: 600;
+    background-color: red;
+}
+td, th {
+    padding: 10px 18px;
+}
+.myTable{
+    margin: 15px;
+}
+
+.myTable th:hover{
+    background-color: aliceblue;
+    color: green;
+}
+.myTable tr:hover{
+    background-color: gray;
+    color: white;
+}
+
+/*PRACTICE TABLE NOVEMBER CALENDAR*/
+.Practice{
+    margin: 15px;
+    text-align: center;
+}
+.Practice th{
+    padding: 7px;
+    background-color: white;
+}
+
+.Weekdays td {
+    font-weight: 600;
+}
+
+.Practice td{
+    padding: 7px 18px;
+}
+
+table {
+    border-bottom: none;
+    border-right: none;
+}
+
+td, th {
+    border: 1px solid black
+}
+
+.ourday{
+    z-index: 3;
+}
+
+
+

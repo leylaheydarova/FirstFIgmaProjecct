@@ -1,0 +1,473 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+/* common css */
+.container{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 10px 0;
+    background-color: white;
+}
+.header__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__box img{
+    height: 57px;
+}
+.header__nav-list{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.header__nav-list a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+
+}
+
+/* END HEADER */
+
+/* hero */
+#hero{
+    background-image: url("./images/herobgimage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#hero h1{
+    margin-bottom: 30px;
+    font-size: 128px;
+    color: rgba(174, 232, 251, 1);
+}
+
+/* discover */
+#discover{
+    padding: 100px 0;
+    background-color: white;
+}
+
+.discover__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover__txt{
+    margin: 80px 0;
+    font-size: 44px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 40px 0;
+    text-align: center;
+    width: 200px;
+}
+
+.btn a{
+    font-size: 14px;
+}
+
+/* provide */
+#provide{
+    background-color: rgba(243, 233, 226, 1);
+    padding: 80px 0;
+}
+
+#provide h2{
+    font-size: 80px;
+    width: 85%;
+}
+
+/* programs */
+#programs{
+    background-color: white;
+    padding: 80px 0;
+}
+.program-title {
+    margin-bottom: 30px;
+}
+
+.programs__cards{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.card{
+    height: 626px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 30px;
+    background-color: rgba(174, 232, 251, 1);
+    border-radius: 10px;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.card-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-txt {
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.card-txt p{
+    margin: 10px 0;
+}
+
+.card.card2{
+    background-color: rgba(243, 233, 226, 1);
+}
+
+/* paycheck */
+.paycheck__box{
+    display: flex;
+    background-color: white;
+}
+
+.paycheck-left {
+    width: 570px;
+}
+
+.paycheck-left img {
+    width: 100%;
+}
+
+.paycheck-right {
+    display: flex;
+    width: 570px;
+    background-color: rgba(243, 233, 226, 1);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.paycheck-right p{
+    width: 371px;
+    font-size: 44px;
+}
+
+/* statistics */
+#statistics{
+    background-color: white;
+}
+.statistics__box{
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.statistics-show{
+    display: flex;
+    margin: 60px 0;
+    
+}
+
+
+.statistics__box h1 {
+font-size: 56px;
+}
+
+.statistics__box p{
+    font-size: 15px;
+    margin: 10px 0;
+    width: 166px;
+    text-align: center;
+}
+
+
+.statistics-clients, .statistics-women, .statistics-salaryincrease{
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    align-items: center;
+    height: 146px;
+    margin-top: 10px;
+}
+
+.statistics-women{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+} 
+
+
+.statistics-top{
+    height: 18px;
+    width: 300px; 
+    margin-top: 70px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* text animation */
+#animation{
+    background-color: white;
+}
+
+.text-animation{
+    display: flex;
+    align-items: center;
+    background-color: rgba(243, 233, 226, 1);
+    position: relative;
+    height: 208px;
+    justify-content: flex-start;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text-animation h1{
+    position: absolute;
+    width: auto;
+    text-align: center;
+    font-size: 75px;
+    padding: 0 90px;
+    letter-spacing: 1px;
+    transform: translateX(100%);
+    animation: move-rtl 10s linear infinite;
+}
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%)
+    }
+}
+
+/* free resources */
+#freeresources{
+    background-color: white;
+    padding: 80px 0;
+}
+
+.resources__box h2{
+    margin: 20px 0;
+}
+
+.resources-cards{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quiz-card, .training-card, .salarycource-card{
+    width: 400px;
+    height: 355px;
+    border-radius: 10px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.quiz-card{
+    background-color: rgba(174, 232, 251, 1);
+    
+}
+
+.training-card{
+    background-color: rgba(243, 233, 226, 1);
+    color: rgba(255, 59, 65, 1);
+    
+}
+
+.salarycource-card{
+    background-color: rgba(255, 59, 65, 1);
+    color: rgba(243, 233, 226, 1);
+}
+
+.resources-cards h1{
+    font-size: 58px;
+    margin: 20px 0;
+}
+
+.resources-cards p{
+    width: 320px;
+    margin: 30px 0;
+}
+
+.salarycource-card p{
+    width: 320px;
+    margin: 8px 0;
+}
+.resources-cards .btn {
+    position: absolute;
+    right: 6%;
+    bottom: -6%;
+    width: 141px;
+}
+
+.training-card .btn {
+    border-color: rgba(255, 59, 65, 1);
+}
+.training-card a{
+    color: rgba(255, 59, 65, 1);
+}
+
+.salarycource-card .btn{
+    border-color: rgba(243, 233, 226, 1);
+}
+
+.salarycource-card a{
+    color: rgba(243, 233, 226, 1);
+}
+
+/* bosola */
+#bosola{
+    background-color: white;
+    padding: 100px 0 0 0;
+}
+
+.bosola__box{
+    height: 525px;
+    background-color: rgba(243, 233, 226, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bosola__box h3{
+    margin: 40px 0;
+}
+
+.bosola__box p{
+    font-size: 44px;
+    width: 671px;
+}
+
+.bosola__box h5{
+    margin: 10px 0;
+}
+
+.circles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle i{
+    font-size: 15px;
+}
+
+.solid i{
+   font-size: 9px;
+   transform: translateX(-14%);
+}
+
+/* image */
+.image__box{
+    height: 100vh;
+    background-image: url("./images/IMAGE.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* transformation */
+#transformation{
+    background-color: white;
+    padding: 150px;
+}
+
+.transformation__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.transformation__box h1{
+    font-size: 80px;
+    width: 714px;
+    margin: 30px 0;
+}
+
+.transformation__box p{
+    font-size: 44px;
+    width: 897px;
+    margin-bottom: 20px;
+}
+
+/* footer */
+#footer{
+    height: 571px;
+    background-color: rgba(243, 233, 226, 1);
+}
+.footer__box{
+position: relative;
+height: 100%;
+}
+
+.footer-top{
+    width: 1700px;
+    margin: 0 auto;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top h1{
+    padding: 0 0 60px 0;
+}
+
+.footer-list{
+    width: 200px;
+    margin-right: 90px;
+    list-style: none;
+}
+
+.footer-list-item a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.copyright{
+    width: 1700px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.copyright p {
+    position: absolute;
+    bottom: 10%;
+}
