@@ -15,6 +15,7 @@
     margin: 0 auto;
 }
 
+/* header */
 .header{
     padding: 10px 0;
     background-color: white;
@@ -77,6 +78,7 @@
     font-size: 44px;
     max-width: 800px;
     width: 100%;
+    width: 100%;
     text-align: center;
 }
 
@@ -88,7 +90,8 @@
     border-radius: 10px;
     margin: 40px 0;
     text-align: center;
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
 }
 
 .btn a{
@@ -103,7 +106,8 @@
 
 #provide h2{
     font-size: 80px;
-    width: 85%;
+    max-width: 85%;
+    width: 100%;
 }
 
 /* programs */
@@ -118,20 +122,24 @@
 .programs__cards{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 40px;
+    flex-wrap: wrap;
 }
 .card{
-    height: 626px;
+    min-height: 626px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    max-width: 30%;
+    width: 100%;
     padding: 30px;
     background-color: rgba(174, 232, 251, 1);
     border-radius: 10px;
 }
 
 .card-img{
+    max-width: 100%;
     width: 100%;
 }
 
@@ -164,16 +172,19 @@
 }
 
 .paycheck-left {
-    width: 570px;
+    max-width: 570px;
+    width: 100%;
 }
 
 .paycheck-left img {
+    max-width: 100%;
     width: 100%;
 }
 
 .paycheck-right {
     display: flex;
-    width: 570px;
+    max-width: 570px;
+    width: 100%;
     background-color: rgba(243, 233, 226, 1);
     border-radius: 20px;
     justify-content: center;
@@ -181,7 +192,8 @@
 }
 
 .paycheck-right p{
-    width: 371px;
+    max-width: 371px;
+    width: 100%;
     font-size: 44px;
 }
 
@@ -196,9 +208,9 @@
     align-items: center;
 }
 .statistics-show{
+    justify-content: center;
     display: flex;
-    margin: 60px 0;
-    
+    flex-wrap: wrap;   
 }
 
 
@@ -209,7 +221,8 @@ font-size: 56px;
 .statistics__box p{
     font-size: 15px;
     margin: 10px 0;
-    width: 166px;
+    max-width: 166px;
+    width: 100%;
     text-align: center;
 }
 
@@ -231,7 +244,8 @@ font-size: 56px;
 
 .statistics-top{
     height: 18px;
-    width: 300px; 
+    max-width: 300px; 
+    width: 100%;
     margin-top: 70px;
     text-align: center;
     margin-top: 50px;
@@ -288,11 +302,14 @@ font-size: 56px;
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .quiz-card, .training-card, .salarycource-card{
-    width: 400px;
-    height: 355px;
+    max-width: 400px;
+    width: 100%;
+    min-height: 355px;
     border-radius: 10px;
     padding: 20px 25px;
     display: flex;
@@ -322,19 +339,22 @@ font-size: 56px;
 }
 
 .resources-cards p{
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
     margin: 30px 0;
 }
 
 .salarycource-card p{
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
     margin: 8px 0;
 }
 .resources-cards .btn {
     position: absolute;
     right: 6%;
     bottom: -6%;
-    width: 141px;
+    max-width: 141px;
+    width: 100%;
 }
 
 .training-card .btn {
@@ -406,13 +426,14 @@ font-size: 56px;
 /* transformation */
 #transformation{
     background-color: white;
-    padding: 150px;
+    padding: 150px 0;
 }
 
 .transformation__box{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -429,45 +450,166 @@ font-size: 56px;
 }
 
 /* footer */
-#footer{
-    height: 571px;
+#footer {
+    min-height: 571px;
+    width: 100%;
     background-color: rgba(243, 233, 226, 1);
-}
-.footer__box{
-position: relative;
-height: 100%;
-}
-
-.footer-top{
-    width: 1700px;
+  }
+  .footer__box {
+    height: 100%;
+  }
+  
+  .footer-top {
+    width: 90%;
     margin: 0 auto;
     padding: 40px 80px;
     display: flex;
     justify-content: space-between;
-}
-.footer-top h1{
+    flex-wrap: wrap;
+  }
+  .footer-top h1 {
     padding: 0 0 60px 0;
-}
-
-.footer-list{
+  }
+  
+  .footer-list {
     width: 200px;
     margin-right: 90px;
     list-style: none;
-}
-
-.footer-list-item a{
+  }
+  
+  .footer-list-item a {
     text-decoration: none;
     color: black;
     font-size: 15px;
-}
-
-.copyright{
-    width: 1700px;
+  }
+  
+  .copyright {
+    width: 90%;
+  
     display: flex;
     justify-content: flex-end;
+  }
+  
+  .copyright p {
+    display: block;
+    bottom: 10%;
+  }
+  
+
+/* responsive */
+@media (min-width: 1400px ){
+    .container{
+        max-width: 1320px;
+    }
+
+    .programs__cards, .resources-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
-.copyright p {
-    position: absolute;
-    bottom: 10%;
+@media (max-width: 1200px ){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px ){
+    .container{
+        max-width: 720px;
+    }
+    .header__nav-list a{
+        font-size: 11px;
+    }
+    #hero h1{
+        font-size: 90px;
+    }
+    .discover__txt{
+        font-size: 30px;
+    }
+   #provide h2{
+    font-size: 50px;
+   }
+   .card{
+    max-width: 46%;
+   }
+   .card-txt p{
+    font-size: 13px;
+   }
+   .paycheck-right p{
+    font-size: 25px;
+    padding: 0 15px;
+   }
+
+   
+}
+
+@media (max-width: 768px ) {
+    .container{
+        max-width: 540px;
+    }
+    #hero{
+        background-position: center;
+    }
+    .image__box{
+        background-position: center;
+    }
+    .bosola__box p, .transformation__box p, .transformation__box h1{
+        max-width: 98%;
+        width: 100%;
+    }
+
+    .transformation__box h1{
+        font-size: 40px;
+    }
+    .transformation__box p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px ){
+    .container{
+        max-width: 100%;
+    }
+    .programs__cards{
+        flex-direction: column;
+    }
+    .header__nav-list a{
+        font-size: 9px;
+    }
+    #hero h1{
+        font-size: 70px;
+    }
+    .discover__txt{
+        font-size: 20px;
+    }
+    #provide h2{
+        font-size: 30px;
+        padding: 0 12px;
+    }
+    .card{
+        height: auto;
+        max-width: 100%;
+    }
+    .paycheck-right p{
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+    }
+    .paycheck__box{
+        display: flex;
+        flex-direction: column;
+    }
+    .statistics-women{
+        border: none;
+    }
+
+    .quiz-card, .training-card, .salarycource-card{
+        max-width: 100%;
+    }
+
+    .bosola__box p{
+        font-size: 35px;
+    }
+   
 }
